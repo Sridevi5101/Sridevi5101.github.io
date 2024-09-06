@@ -1,0 +1,296 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  background: rgb(255, 255, 255);
+  color: #000000;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  box-sizing: border-box;
+}
+
+.logo {
+  font-size: 25px;
+  color: #000000;
+  font-family: 'Satoshi';
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navbar a {
+  font-size: 18px;
+  color: #000000;
+  font-family: 'Satoshi';
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: .3s;
+}
+
+.navbar a:hover {
+  color: #a136ff;
+
+}
+
+
+
+
+
+.about {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.about-content {
+  font-family: 'Satoshi';
+  max-width: 600px;
+}
+
+.profile-picture {
+  margin-right: 50px; 
+  align-self: flex-start;
+}
+
+.profile-picture img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top; /* Aligns the image to the top of the circle */
+  position: relative;
+  top: 30px;
+}
+
+.about-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.about-content h1 {
+  font-size: 30px;
+  margin-bottom: 3px; 
+}
+
+.about-content h3 {
+  font-size: 20px;
+  color: #a136ff;
+  margin-top: 4px; 
+}
+
+.about-content p {
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 25px; 
+}
+
+.about-content .btn-box {
+  display: flex; 
+  justify-content: space-between; 
+  width: 250px;
+  height: 40px;
+}
+
+.btn-box a {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  width: 100px;
+  height: 100%;
+  background: #ab66ff;
+  border: 2px #ab66ff;
+  border-radius: 12px;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 19px; /* Space between buttons */
+  color: #ffffff;
+  font-size: 16px; 
+  font-weight: 500;
+  box-sizing: border-box;
+}
+
+.btn-box a:nth-child(2) {
+  background: transparent;
+  color: #ab66ff;
+  border: 2px solid #ab66ff; 
+}
+
+.btn-box a:hover {
+  background: #ab66ff;
+  color: #ffffff;
+}
+
+.btn-box a:nth-child(2):hover {
+  background: #ab66ff;
+  color: #ffffff;
+}
+
+
+
+
+
+.experience {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.education {
+  font-family: 'Satoshi';
+  max-width: 600px;
+}
+
+.work-experience {
+  font-family: 'Satoshi';
+  max-width: 600px;
+  padding-left: 100px;
+}
+
+
+
+
+.portfolio {
+  background-color: #f8f8f8; 
+  font-family: 'Satoshi';
+  width: 100%;
+  height: auto;
+  border-radius: inherit; 
+  max-width: 1000px; 
+  padding: 0 10%; /* Padding added for alignment */
+  padding-top: 5px;
+  padding-bottom: 90px;
+  margin: 0
+  box-sizing: border-box; 
+  text-align: left; /* Ensures that text-align applies to the container and children */
+}
+
+.portfolio h2 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  text-align: left; /* Left-aligns the heading */
+}
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 3rem; /* Increased gap between images */
+  padding: 0; 
+  margin: 0; 
+  width: 100%;
+}
+
+.portfolio-container .portfolio-box {
+  border-radius: 2rem;
+  overflow: hidden; /* Ensures content does not overflow the rounded corners */
+  width: 100%; 
+  height: auto; 
+  display: flex;
+  flex-direction: column; 
+  text-align: left; 
+}
+
+.portfolio-container .portfolio-box img {
+  width: 100%; /* Ensures image takes full width of the container */
+  height: auto; /* Adjusts height automatically to maintain aspect ratio */
+  object-fit: cover; /* Ensures the image covers the container */
+  border-radius: 2rem; /* Ensures the image corners match the container */
+}
+
+.portfolio-container .portfolio-box .portfolio-layer {
+  padding: 10px; 
+  text-align: left; /* Left-aligns text in the portfolio layer */
+}
+
+.portfolio-layer h4 {
+  margin: 0;
+  font-size: 1.25rem; 
+  font-weight: bold; 
+}
+
+.portfolio-layer p {
+  margin: 0;
+  font-size: 1rem; 
+}
+
+
+
+
+footer {
+  background-color: #ffffff; 
+  color: #000000; 
+  padding: 20px;
+  border-top: none;
+  min-height: 20vh;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Satoshi';
+  margin: 0 8%;
+  box-sizing: border-box;
+}
+
+.contact-details {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.contact-details p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.contact-details a {
+  display: block;
+  margin-top: 2px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  text-decoration: none;
+  color: #ab66ff;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+}
+
+.footer-right p {
+  margin: 0;
+  margin-right: 10px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icon {
+  color: #000000;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.social-icon:hover {
+  color: #ab66ff; 
+}
